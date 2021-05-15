@@ -1,0 +1,14 @@
+# dependencies npm
+node_modules
+
+# enviroment variables
+.env
+
+# config docker
+dockerfile
+
+# versions git
+.git
+
+# files ignores
+.gitignore
