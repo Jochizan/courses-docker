@@ -1,13 +1,6 @@
-FROM node:16
+FROM nginx:latest
 
-WORKDIR /node-app
+WORKDIR /usr/share/nginx/html
 
-COPY package.json .
+COPY . .
 
-RUN npm i
-
-COPY . ./
-
-EXPOSE 5001
-
-CMD [ "npm", "run", "dev" ]
